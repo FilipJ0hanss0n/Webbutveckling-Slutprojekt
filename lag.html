@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- Sätter språket till svenska-->
+<html lang="sv">
+	<head>
+		<!--Ändrar charset till UTF-8-->
+		<meta charset="UTF-8">
+		<!--Länkar css-->
+		<link href="slutprojekt.css" rel="Stylesheet">
+		<!--Titlen-->
+		<title>Lag</title>
+	</head>
+	<body>
+	<!--Globala menyn börjar-->
+	<header>
+		<nav>
+			<div class="grid">
+				<ul class="huvudmeny">
+					<li><a href="index.html">Huvudmeny</a></li>
+					<li><a href="fakta.html">Fakta</a></li>
+					<li><a href="csgo.html">Csgo</a></li>
+					<li><a href="lag.html">Olika lag</a></li>
+					<li><a href="händelser.html">Historiska händelser</a></li>
+				</ul>
+			</div>	
+		</nav>
+	</header>
+	<!--Globala menyn slutar-->
+	<main>
+		<!--Grid och listan börjar-->
+		<div class="grid">
+			<div class="grid-item">
+				<ul>
+					<li>Fnatics lag</li>
+					<li>Flusha,26</li>
+					<li>JW,25</li>
+					<li>Krimz,26</li>
+					<li>Golden,26</li>
+					<li>Brollan,17</li>
+				</ul>
+			</div>
+			<div class="grid-item">
+				<ul>
+					<li>Astralis lag</li>
+					<li>Device,24</li>
+					<li>Xyp9x,24</li>
+					<li>Dupreeh,27</li>
+					<li>Gla1ve,24</li>
+					<li>Magisk,22</li>
+				</ul>
+			</div>
+			<div class="grid-item">
+				<ul>
+					<li>Natus Vinceres lag</li>
+					<li>Flamie,23</li>
+					<li>S1mple,22</li>
+					<li>Electronic,21</li>
+					<li>Boombl4,21</li>
+					<li>Perfecto,20</li>
+				</ul>
+			</div>
+		</div>
+		<!--Lista slutar-->
+		<!--Bilder-->
+		<div class="grid">
+			<div class="grid-item">
+				<img src="fnatic.jpg" class="bilder" alt="Fnatic">
+			</div>
+			<div class="grid-item">
+				<img src="astralis.jpg" class="bilder" alt="Astralis">
+			</div>
+			<div class="grid-item">
+				<img src="navi.jpg" class="bilder" alt="Natus Vincere">
+			</div>
+		</div>
+		<!--Bilder och grid slutar-->
+		<!--Formulär börjar-->
+		<form action="/action_page.php" method="get">
+			<textarea id="lag" name="lag" rows="10" cols="40">Dessa tre lag är de största lagen inom Csgo Esport för tillfälligt</textarea>
+			<br>Favorit lag?</br>
+			<label for="lag">Fnatic</label>
+			<input type="radio" name="lag" id="lag" value="fnatic"><br>
+			<label for="lag">Astralis</label>
+			<input type="radio" name="lag" id="lag" value="astralis"><br>
+			<label for="lag">Navi</label>
+			<input type="radio" name="lag" id="lag" value="navi"><br><br>
+			<br>Vilket fordon har du?</br>
+			<label> <input type="checkbox">:Bil</label>
+			<label> <input type="checkbox">:Cykel</label>
+			<label> <input type="checkbox">:Motorcykel</label>
+			<br> </br>
+			<label for="pwd">Lösenord:</label>
+			<input type="password" id="lag">
+			<input type="submit" value="Skicka">
+		</form>
+		<!--Formulär avslutas-->
+	</main>
+	</body>
+</html>

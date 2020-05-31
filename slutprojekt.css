@@ -1,0 +1,203 @@
+nav
+{	/*Skapar en grid i meny för att placera länkarna i senare*/
+	display:grid;
+	/*Bestämmer storleken för columnerna i griden och gör dem alla lika stora (1 fraktions mellanrum)*/
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+	/*Gör meny till en grid area som heter nav för att kunna sätta den i sidans grid senare*/
+	grid-area: nav; 
+	/*Ändrar bakgrundfärgen till lila*/
+	background-color:purple;
+	/*Ändrar storleken på texten i globala menyn till 30 pixlar*/
+	font-size:30px;
+	
+}
+
+nav > li
+{
+    /*Sätter texten i mitten*/
+    text-align:center;
+    /*Ändrar bakgrundsfärgen till blå*/
+    background-color:#1258D3;
+    /*Gör alla div 5% pixlar större åt alla håll*/
+    padding:5%;
+	/*Sätter allt till vänster*/
+	float:left;
+}
+
+nav a
+{
+    /*Gör hela diven till ett block så man kommer till länken om man klickar någonstans innanför diven*/
+    display:block;
+    /*Gör länkarnas texten vit*/
+    color:white;
+    /*Tar bort understruckingen och så länkarna inte ändrar färg*/
+    text-decoration:none;
+}
+li a 
+{	
+  /*Gör så att menyn displar block*/
+  display:block;
+  /*Gör padding i menyn till 8 pixlar*/
+  padding: 8px;
+}
+
+nav li:hover
+{
+    /*Gör bakgrunden till svart när man håller muspekaren över dem*/
+    background-color:black;
+    /*Gör textens färg till vit när man håller muspekaren över dem*/
+    color:white;
+	
+}
+
+nav li:active,nav li:link,nav li:visited
+{
+    /*Gör bakgrunden till lila när man klickar på en meny*/
+    background-color:purple;
+	/*Tar bort så man inte ser länken*/
+	display:block;
+}
+
+#Esport
+{	
+	/*Gör bildens tjocklek större*/
+	width:850px;
+	/*Gör bildens höjd större*/
+	height:600px;
+	/*Gör bildens att bilden blockerar display*/
+	display:block;
+	/*Centrerar bilden*/
+    margin-left:auto;
+	/*Centrerar bilden*/
+    margin-right:auto;
+	/*Gör runda kanter på bilden*/
+	border-radius:50px;
+}
+
+table,body
+{	
+	/*Gör text storleken till 16 pixlar*/
+	font-size:16px;
+	/*Gör tjockleken till 1900 pixlar*/
+	width:1900px;
+	/*Gör färgen till vit*/
+	color:white;
+	/*Ändrar bakgrundsfärgen till svart */
+	background-color:rgb(0,0,0);
+	/*Ändrade margin till 0*/
+	margin:0;
+	
+}
+
+p,br
+{
+	/*Gör så att texten centeras*/
+	text-align:center;
+	/*Ändrar till vit färg*/
+	color:white;
+}	
+
+video
+{	
+	/*Gör videons tjocklek till 55 em*/
+	width:55em;
+	/*Gör videons höjd till 55 em*/
+	height:55em;
+	/*Gör bildens att bilden blockerar display*/
+	display:block;
+	/*Centrerar bilden*/
+    margin-left:auto;
+	/*Centrerar bilden*/
+    margin-right:auto;
+	/*Gör att videon täcker hela rutan*/
+	border:0;
+}
+
+.lag
+{	
+	/*Gör listans tjocklek till 100%*/
+	width:100%;
+}
+
+.bilder
+{
+	/*Ändrade tjocklek på bilden till 450px*/
+	width:450px;
+	/*Ändrade höjd på bilden till 300px*/
+	height:300px;
+}
+
+.grid
+{ 
+  /*Displayar grid*/
+  display: grid;
+  /*Gör mellanrummet lika stora mellan de 3 spalterna*/
+  grid-template-columns: auto auto auto;
+}
+.grid-item 
+{ 
+	/*Ändrar färg till svart*/
+  background-color:black;
+  /*Gör ett mellan rum på 20 pixlar*/
+  padding: 20px;
+  /*Text storlek till 20 pixlar*/
+
+}
+
+/*Child selector*/
+.grid-item > p
+{
+  /*Text storlek till 20 pixlar*/
+  font-size: 20px;
+  /*Sätter texten i mitten på sin egna ruta*/
+  text-align: center;
+}
+
+.grid-item1
+{
+  /*Ändrar färg till svart*/
+  background-color:black;
+  /*Sätter texten i mitten på sin egna ruta*/
+  text-align: center;
+  /*Text storlek till 16 pixlar*/
+  font-size: 16px;
+}
+
+form,textarea
+{	
+	/*Ändrar formulärs texten till 20 pixlar*/
+	font-size:20px;
+}
+
+tr
+{	
+	/*Gör en border i listan till 20 pixlar*/
+	border:20px;
+	/*Ändrar listans text färg till vit*/
+	background-color:white;
+	
+}
+
+td
+{	
+	/*Gör listans bakgrund till svart*/
+	color:black;
+}
+
+.huvudmeny 
+{ 
+	/*Gör margin 0 på menyn*/
+  margin: 0;
+  /*Gör padding till 0 på menyn*/
+  padding: 0;
+  /*Gör overflow i menyn till 0*/
+  overflow:0;
+  /*Gör så menyn inte har någon typ*/
+  list-style-type: none;
+}
+
+	/*Klassen för formuläret*/
+#lag
+{	
+	font-size:20px;
+}
